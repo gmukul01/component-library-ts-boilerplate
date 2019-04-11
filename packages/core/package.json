@@ -1,14 +1,11 @@
 {
     "name": "@components/core",
     "version": "1.0.0",
-    "main": "lib/index.js",
-    "typings": "lib/index.d.ts",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
     "files": [
-        "lib/"
+        "dist/"
     ],
-    "scripts": {
-        "build": "lerna exec --parallel 'BABEL_ENV=build babel --root-mode upward src --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments'"
-    },
     "license": "MIT",
     "dependencies": {
         "@components/theme": "^1.0.0"
