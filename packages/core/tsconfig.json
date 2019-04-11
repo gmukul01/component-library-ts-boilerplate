@@ -1,8 +1,8 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "outDir": "./dist",
-        "rootDir": "./src",
+        "outDir": "dist",
+        "rootDir": "src",
         "baseUrl": "./",
         "paths": {
             "@styled": ["src/utils/styled"],
@@ -10,5 +10,5 @@
             "@utils/*": ["src/utils/*"]
         }
     },
-    "include": ["./src"]
+    "include": ["src"]
 }

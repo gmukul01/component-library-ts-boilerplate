@@ -8,12 +8,14 @@
     ],
     "license": "MIT",
     "scripts": {
-        "prebuild": "tsc",
+        "type-check": "tsc -p tsconfig.json",
+        "prebuild": "yarn type-check",
         "build": "babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments",
-        "postbuild": "tsc --emitDeclarationOnly --declaration --noEmit false"
+        "postbuild": "tsc -p tsconfig.build.json"
     },
     "peerDependencies": {
         "react": "^16.8.6",
+        "react-dom": "^16.8.6",
         "styled-components": "^4.2.0"
     },
     "dependencies": {
