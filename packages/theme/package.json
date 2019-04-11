@@ -1,10 +1,15 @@
 {
-    "name": "@components/theme",
+    "name": "@react-components/theme",
     "version": "1.0.0",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "files": [
         "dist/"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+        "prebuild": "tsc",
+        "build": "babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+        "postbuild": "tsc --emitDeclarationOnly --declaration --noEmit false"
+    }
 }

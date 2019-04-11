@@ -3,7 +3,12 @@
     "compilerOptions": {
         "outDir": "./dist",
         "rootDir": "./src",
-        "baseUrl": "./"
+        "baseUrl": "./",
+        "paths": {
+            "@styled": ["src/utils/styled"],
+            "@test-utils": ["src/utils/test-utils"],
+            "@utils/*": ["src/utils/*"]
+        }
     },
     "include": ["./src"]
 }

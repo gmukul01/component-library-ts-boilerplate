@@ -1,5 +1,5 @@
 {
-    "name": "@components/core",
+    "name": "@react-components/core",
     "version": "1.0.0",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -7,7 +7,16 @@
         "dist/"
     ],
     "license": "MIT",
+    "scripts": {
+        "prebuild": "tsc",
+        "build": "babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+        "postbuild": "tsc --emitDeclarationOnly --declaration --noEmit false"
+    },
+    "peerDependencies": {
+        "react": "^16.8.6",
+        "styled-components": "^4.2.0"
+    },
     "dependencies": {
-        "@components/theme": "^1.0.0"
+        "@react-components/theme": "^1.0.0"
     }
 }

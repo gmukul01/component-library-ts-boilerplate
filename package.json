@@ -7,9 +7,7 @@
     "version": "1.0.0",
     "description": "🚀 Simple themable component library boilerplate using react, styled-compoent & typescript",
     "scripts": {
-        "prebuild": "tsc",
-        "build": "lerna exec --parallel 'babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments'",
-        "postbuild": "lerna exec --parallel 'tsc --emitDeclarationOnly --declaration --noEmit false'",
+        "build": "lerna run build",
         "test": "jest",
         "lint": "run-p -c lint:*",
         "lint:css": "stylelint './packages/**/*.{ts, tsx}'",
@@ -36,6 +34,7 @@
         "@babel/preset-typescript": "^7.3.3",
         "@types/jest": "^24.0.11",
         "@types/react": "^16.8.13",
+        "@types/styled-components": "^4.1.14",
         "babel-plugin-styled-components": "^1.10.0",
         "jest": "^24.7.1",
         "jest-styled-components": "^6.3.1",

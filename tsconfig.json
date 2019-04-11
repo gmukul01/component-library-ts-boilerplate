@@ -13,6 +13,7 @@
         "strictNullChecks": false,
         "target": "esnext",
         "paths": {
+            "@react-components/*": ["packages/*/src"],
             "*": ["node_modules", "packages"]
         }
     },
