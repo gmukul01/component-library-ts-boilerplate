@@ -12,7 +12,7 @@
         "test": "run-p -c type-check test:jest",
         "test:jest": "jest --passWithNoTests",
         "lint": "run-p -c lint:*",
-        "lint:css": "stylelint './packages/**/*.{ts, tsx}'",
+        "lint:css": "stylelint 'packages/**/src/**/*.tsx'",
         "lint:ts": "tslint -p tsconfig.json"
     },
     "repository": {
