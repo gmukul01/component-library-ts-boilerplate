@@ -5,9 +5,9 @@
         "rootDir": "src",
         "baseUrl": "./",
         "paths": {
-            "@styled": ["src/utils/styled"],
-            "@test-utils": ["src/utils/test-utils"],
-            "@utils/*": ["src/utils/*"]
+            "@core-styled": ["src/utils/styled"],
+            "@core-test-utils": ["src/utils/test-utils"],
+            "@core-utils/*": ["src/utils/*"]
         }
     },
     "include": ["src"]

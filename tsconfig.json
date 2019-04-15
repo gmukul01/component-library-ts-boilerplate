@@ -6,7 +6,6 @@
         "lib": ["es2015", "dom"],
         "moduleResolution": "node",
         "noEmit": true,
-        "rootDir": "./",
         "skipLibCheck": true,
         "strict": true,
         "strictFunctionTypes": false,
@@ -14,9 +13,11 @@
         "target": "esnext",
         "paths": {
             "@react-components/*": ["packages/*/src"],
-            "*": ["node_modules", "packages"]
+            "@core-styled": ["packages/core/src/utils/styled"],
+            "@core-test-utils": ["packages/core/src/utils/test-utils"],
+            "@core-utils/*": ["packages/core/src/utils/*"]
         }
     },
     "include": ["packages"],
-    "exclude": ["node_modules", "packages/**/dist"]
+    "exclude": ["node_modules", "packages/**/dist", ".storybook"]
 }

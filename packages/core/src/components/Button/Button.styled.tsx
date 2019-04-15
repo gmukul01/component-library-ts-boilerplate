@@ -1,5 +1,5 @@
+import { css, styled } from '@core-styled';
 import { ButtonTheme, defaultTheme } from '@react-components/theme';
-import { css, styled } from '@styled';
 import { Props } from './types';
 
 const outlined = (theme: ButtonTheme) => css`
