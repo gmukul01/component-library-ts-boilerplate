@@ -8,9 +8,7 @@
     ],
     "license": "MIT",
     "scripts": {
-        "type-check": "tsc -p tsconfig.json",
-        "prebuild": "yarn type-check",
-        "build": "babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+        "build": "cross-env BABEL_ENV=production babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments",
         "postbuild": "tsc -p tsconfig.build.json"
     },
     "peerDependencies": {

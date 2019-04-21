@@ -1,13 +1,13 @@
 import { FontSizeTheme } from './types';
 
 const sizes: FontSizeTheme = {
-    L1: '56px',
-    L2: '40px',
-    L3: '24px',
-    L4: '20px',
-    M1: '16px',
+    L4: '56px',
+    L3: '40px',
+    L2: '24px',
+    L1: '20px',
+    M3: '16px',
     M2: '14px',
-    M3: '12px',
+    M1: '12px',
     S1: '10px'
 };
 

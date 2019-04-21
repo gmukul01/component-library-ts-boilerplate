@@ -5,5 +5,5 @@
         "declaration": true,
         "emitDeclarationOnly": true
     },
-    "exclude": ["node_modules", "dist", "**/*.test.tsx", "**/*.test.ts", "**/*.stories.tsx", "__snapshots__", "__tests__", "__stories__"]
+    "exclude": ["dist", "**/*.test.tsx", "**/*.test.ts", "**/*.stories.tsx"]
 }

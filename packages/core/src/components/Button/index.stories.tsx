@@ -1,20 +1,22 @@
-import React from 'react';
-
-import { action } from '@storybook/addon-actions';
+import { wInfo } from '@storybook-utils';
+import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
-
+import React from 'react';
 import Button from './Button';
 
-storiesOf('Button', module)
-    .add('with text', () => (
-        <Button solid onClick={action('clicked')}>
-            Hello Button
+const buttonOptions = ['solid', 'flat', 'outlined'];
+storiesOf('Components', module).add(
+    'Button',
+    () => (
+        <Button
+            {...{
+                solid: 'solid' === select('Button Option', buttonOptions, 'solid'),
+                flat: 'flat' === select('Button Option', buttonOptions, 'solid'),
+                outlined: 'outlined' === select('Button Option', buttonOptions, 'solid')
+            }}
+        >
+            Demo Button
         </Button>
-    ))
-    .add('with some emoji', () => (
-        <Button onClick={action('clicked')}>
-            <span role="img" aria-label="so cool">
-                😀 😎 👍 💯
-            </span>
-        </Button>
-    ));
+    ),
+    wInfo('Button Component with below props')
+);

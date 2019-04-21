@@ -6,7 +6,7 @@ import { Props } from './types';
 
 import { isValidStringOrNumber } from '@core-utils/helpers/ReactHelper';
 
-const Button: React.FunctionComponent<Props> & WithStyle = props => {
+export const Button: React.SFC<Props> & WithStyle = props => {
     return (
         <ButtonStyled {...props}>
             {React.Children.map(props.children, c => {
