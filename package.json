@@ -6,17 +6,25 @@
     ],
     "version": "1.0.0",
     "description": "🚀 Simple themable component library boilerplate using react, styled-compoent & typescript",
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-lerna-changelog"
+        }
+    },
     "scripts": {
-        "type-check": "tsc -p tsconfig.json",
         "prebuild": "yarn type-check",
         "build": "lerna run build",
-        "test": "run-s type-check test:jest",
-        "test:jest": "jest --passWithNoTests",
+        "build-storybook": "build-storybook",
+        "commit": "git-cz",
         "lint": "run-p -c lint:*",
         "lint:css": "stylelint 'packages/**/src/**/*.tsx'",
         "lint:ts": "tslint -p tsconfig.json",
+        "prerelease": "yarn build",
+        "release": "lerna publish",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
+        "test": "run-s type-check test:jest",
+        "test:jest": "jest --passWithNoTests",
+        "type-check": "tsc -p tsconfig.json"
     },
     "repository": {
         "type": "git",
@@ -54,7 +62,9 @@
         "@types/styled-components": "^4.1.14",
         "babel-loader": "^8.0.5",
         "babel-plugin-styled-components": "^1.10.0",
+        "commitizen": "^3.1.1",
         "cross-env": "^5.2.0",
+        "cz-lerna-changelog": "^2.0.2",
         "fork-ts-checker-webpack-plugin": "^1.0.2",
         "jest": "^24.7.1",
         "jest-styled-components": "^6.3.1",
