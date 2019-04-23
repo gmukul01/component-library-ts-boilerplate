@@ -1,4 +1,4 @@
-import { Theme } from '@react-components/theme';
+import { Theme } from '@react-basis/theme';
 
 export interface WithThemeProp {
     theme?: Theme;

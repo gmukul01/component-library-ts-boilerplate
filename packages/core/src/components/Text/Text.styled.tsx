@@ -1,5 +1,5 @@
 import { css, styled } from '@core-styled';
-import { defaultTheme } from '@react-components/theme';
+import { defaultTheme } from '@react-basis/theme';
 import { Props, StyledProps } from './types';
 
 const uppercase = () => css`

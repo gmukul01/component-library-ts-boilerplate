@@ -1,5 +1,5 @@
 import { HTMLProps, WithThemeProp } from '@core-utils/types';
-import { FontSizeTheme, FontWeightTheme } from '@react-components/theme';
+import { FontSizeTheme, FontWeightTheme } from '@react-basis/theme';
 
 interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
     textColor?: string;

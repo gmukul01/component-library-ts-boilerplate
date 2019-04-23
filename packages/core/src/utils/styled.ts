@@ -1,4 +1,4 @@
-import { Theme } from '@react-components/theme';
+import { Theme } from '@react-basis/theme';
 import * as styledComponents from 'styled-components';
 
 // tslint:disable-next-line: no-duplicate-imports

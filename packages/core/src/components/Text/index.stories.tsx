@@ -1,4 +1,4 @@
-import { FontSizeTheme, FontWeightTheme } from '@react-components/theme';
+import { FontSizeTheme, FontWeightTheme } from '@react-basis/theme';
 import { wInfo } from '@storybook-utils';
 import { boolean, color, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';

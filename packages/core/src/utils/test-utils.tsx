@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@core-styled';
-import { defaultTheme } from '@react-components/theme';
+import { defaultTheme } from '@react-basis/theme';
 import React from 'react';
 import { render, RenderResult } from 'react-testing-library';
 
