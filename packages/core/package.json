@@ -1,6 +1,6 @@
 {
     "name": "@react-basis/core",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -17,6 +17,6 @@
         "styled-components": "^4.2.0"
     },
     "dependencies": {
-        "@react-basis/theme": "^1.0.2"
+        "@react-basis/theme": "^1.0.3"
     }
 }
