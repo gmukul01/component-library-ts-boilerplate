@@ -24,6 +24,8 @@
         "storybook": "start-storybook -p 6006",
         "test": "run-s type-check test:jest",
         "test:jest": "jest --passWithNoTests",
+        "test:update": "run-s type-check \"test:jest -- -u\"",
+        "test:watch": "run-s \"type-check -- -w\" \"test:jest -- --watch\"",
         "type-check": "tsc -p tsconfig.json"
     },
     "repository": {
